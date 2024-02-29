@@ -26,6 +26,7 @@
       input{
         padding: 10px;
         margin-top: 10px;
+        outline: none;
         
       }
 
@@ -52,11 +53,12 @@
 
     <script>
         function saberIdade(){
-            var anoAtual = document.querySelector('#anoatual').value
-            var anoNascimento = document.querySelector('#anonascimento').value
+            var anoAtual = document.querySelector('#anoatual').value;
+            var anoNascimento = document.querySelector('#anonascimento').value;
             var resultado = document.querySelector('p')
             var atual = anoAtual - anoNascimento
             resultado.innerHTML = `Você possui: <strong>${atual}</strong> `
+            resultado.style.color = 'red'
 
         }
        
