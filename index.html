@@ -7,7 +7,8 @@
     <title>Sua idade ?</title>
     <style>
         body{
-            background-color: #042326;
+          background: linear-gradient(45deg,blue,rgb(175, 87, 87),orange);
+            /* background-color: #042326; */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: white;
         }
@@ -28,6 +29,9 @@
         padding: 10px;
         margin-top: 10px;
         outline: none;
+        border-radius: 7px;
+        border: none;
+        
         
       }
 
@@ -44,7 +48,7 @@
             
         <div>
                 <h2>Descubra sua idade</h2>
-                <input type="number" id="anoatual" placeholder="Digite o ano atual">
+                <input type="number" id="anoatual" placeholder="Digite o ano atual" required>
                 <input type="number" id="anonascimento" placeholder="Digite ano de nascimento" required>
                 <input type="button" value="Descobrir" onclick="saberIdade()">
                 <p></p>
@@ -58,8 +62,9 @@
             var anoNascimento = document.querySelector('#anonascimento').value;
             var resultado = document.querySelector('p')
             var atual = anoAtual - anoNascimento
-            resultado.innerHTML = `Você possui: <strong>${atual}</strong> `
-            resultado.style.color = 'red'
+            resultado.innerHTML = `Você possui: <strong>${atual}</strong> &#x1F60A;`
+            resultado.style.color = 'white'
+
 
         }
        
