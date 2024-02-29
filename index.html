@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso</title>
+    <style>
+        body{
+            background-color: #042326;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+      div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        
+      }
+      h2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      input{
+        padding: 10px;
+        margin-top: 10px;
+        
+      }
+
+
+      #butn{
+        margin-top: 18px;
+
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+            
+        <div>
+                <h2>Descubra sua idade</h2>
+                <input type="number" id="anoatual" placeholder="Digite o ano atual">
+                <input type="number" id="anonascimento" placeholder="Digite ano de nascimento" required>
+                <input type="button" value="Descobrir" onclick="saberIdade()">
+                <p></p>
+            </div>
+
+    </div>
+
+    <script>
+        function saberIdade(){
+            var anoAtual = document.querySelector('#anoatual')
+            var anoNascimento = document.querySelector('#anonascimento')
+            var resultado = document.querySelector('p')
+            var atual = Number(anoAtual.value)
+            var ano = Number(anoNascimento.value)
+            var atual = atual - ano
+            resultado.innerHTML = `Você possui: ${atual} `
+
+        }
+       
+       
+        
+           
+    </script>
+</body>
+</html>
