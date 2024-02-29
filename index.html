@@ -52,13 +52,11 @@
 
     <script>
         function saberIdade(){
-            var anoAtual = document.querySelector('#anoatual')
-            var anoNascimento = document.querySelector('#anonascimento')
+            var anoAtual = document.querySelector('#anoatual').value
+            var anoNascimento = document.querySelector('#anonascimento').value
             var resultado = document.querySelector('p')
-            var atual = Number(anoAtual.value)
-            var ano = Number(anoNascimento.value)
-            var atual = atual - ano
-            resultado.innerHTML = `Você possui: ${atual} `
+            var atual = anoAtual - anoNascimento
+            resultado.innerHTML = `Você possui: <strong>${atual}</strong> `
 
         }
        
