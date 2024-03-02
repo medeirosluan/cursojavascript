@@ -51,28 +51,12 @@
             
             <div>
                 <h3>Qual sua idade ?</h3>
-                <input type="number" id="anoatual" placeholder="Digite o ano atual" required >
-                <input type="number" id="anonascimento" placeholder="Digite ano de nascimento" required>
+
                 <input type="button" value="Descobrir" onclick="saberIdade()">
                 <p></p>
             </div>
 
-    </div>
-
-    <script>
-        function saberIdade(){
-            var anoAtual = document.querySelector('#anoatual').value;
-            var anoNascimento = document.querySelector('#anonascimento').value;
-            var resultado = document.querySelector('p')
-            var atual = anoAtual - anoNascimento
-            resultado.innerHTML = `Você possui: <strong>${atual}</strong> &#x1F60A;`
-            resultado.style.color = 'white'
-            resultado.style.textAlign = 'center'
-        }
-       
-       
-        
-           
+    </div>   
     </script>
 </body>
 </html>
