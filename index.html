@@ -1,62 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/grupo-de-idade.png" type="image/x-icon">
-    <title>Sua idade ?</title>
-    <style>
-        body{
-            background-image: linear-gradient(45deg,blue,rgb(175, 87, 87),orange);
-            background-attachment: fixed;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-      div{
-        display: flex;
-        flex-direction: column;
-        padding: 60px;
-        
-      }
-      h3{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: center;
-      }
-
-      input{
-    
-        padding: 10px;
-        margin-top: 10px;
-        outline: none;
-        border-radius: 7px;
-        border: none;
-        
-        
-      }
-
-
-      #butn{
-        margin-top: 18px;
-      }
-
-    </style>
+    <title>Consumo da API da SPTrans</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-            
-            <div>
-                <h3>Qual sua idade ?</h3>
-
-                <input type="button" value="Descobrir" onclick="saberIdade()">
-                <p></p>
-            </div>
-
-    </div>   
-    </script>
+    <h1>Busca de Linhas de Ônibus</h1>
+    <input type="text" id="searchTerm" placeholder="Digite o número ou nome da linha">
+    <button onclick="searchBusLines()">Buscar</button>
+    <div id="results"></div>
+    <script src="./script.js"></script>
 </body>
 </html>
