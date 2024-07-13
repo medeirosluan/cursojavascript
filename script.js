@@ -1,4 +1,4 @@
-const TOKEN = "sua_chave_de_api"; // Substitua pelo seu token da API
+const TOKEN = "655bea04bd31646d2c7c8442d554dc446cf0963b2f637d621f263cde8d91055e"; // Substitua pelo seu token da API
 const BASE_URL = "http://api.olhovivo.sptrans.com.br/v2.1";
 
 // Função para autenticar
